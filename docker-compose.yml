@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ADMIN_PASSWORD=TZAFON
+      - GCS_BUCKET_NAME=
+      - PORT=8080
+    volumes:
+      - ./data:/app/data

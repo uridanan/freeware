@@ -21,6 +21,8 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
+      - '--set-env-vars'
+      - 'ADMIN_PASSWORD=TZAFON,GCS_BUCKET_NAME=freeware-apps-data'
 
 images:
   - 'gcr.io/$PROJECT_ID/freeware-app:$COMMIT_SHA'
